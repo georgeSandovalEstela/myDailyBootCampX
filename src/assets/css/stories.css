@@ -73,15 +73,15 @@
 }
 
 .img-storie1 {
-  background-image: url("../assets/stories/bg-1.jpg");
+  background-image: url("/src/assets/stories/bg-1.jpg");
 }
 
 .img-storie2 {
-  background-image: url("../assets/stories/bg-2.jpg");
+  background-image: url("/src/assets/stories/bg-2.jpg");
 }
 
 .img-storie3 {
-  background-image: url("../assets/stories/bg-3.jpg");
+  background-image: url("/src/assets/stories/bg-3.jpg");
 }
 
 .profile-photo {

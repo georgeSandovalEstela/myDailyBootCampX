@@ -8,11 +8,6 @@ function DailyContent() {
       <InputPost />
       <div className="posts-container">
         <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
       </div>
     </div>
   );
