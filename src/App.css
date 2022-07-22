@@ -1,6 +1,76 @@
+@import url("./assets/css/modal-input.css");
+@import url("./assets/css/modal-style.css");
+@import url("./assets/css/profile-card.css");
+@import url("./assets/css/cards.css");
+@import url("./assets/css/team.css");
+@import url("./assets/css/followme.css");
+@import url("./assets/css/footer.css");
+@import url("./assets/css/notice-sections.css");
+@import url("./assets/css/reset.css");
+@import url("./assets/css/header.css");
+@import url("./assets/css/styles-new-learning.css");
+@import url("./assets/css/stories.css");
+@import url("./assets/css/main-scroll.css");
+
+
 #root {
-  /* max-width: 1280px;
-  margin: 0 auto;
+  max-width: 100%;
+  /* margin: 0 auto;
   padding: 2rem;
-  text-align: center; */
+  text-align: center;  */
+}
+
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --solitude: #f1f2f6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--solitude);
+  font-family: "Montserrat";
+}
+
+.main {
+  max-width: 1317px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main > div {
+  border-radius: 4px;
+}
+
+.sidebar-right {
+  max-width: 363px;
+}
+
+.sidebar-left {
+  max-width: 274px;
+  position: sticky;
+  height: fit-content;
+  top: 90px;
+}
+
+.sidebar-left,
+.sidebar-right {
+  position: sticky;
+  height: fit-content;
+  top: 90px;
+}
+
+.daily-content {
+  max-width: 622px;
+  margin-left: 29px;
+  margin-right: 29px;
+  margin-bottom: 2em;
 }
