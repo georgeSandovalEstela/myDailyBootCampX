@@ -4,6 +4,7 @@ import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "../public/components/NavBar";
+import Sections from "../public/components/Sections";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,9 @@ function App() {
     <div id="root">
       <BrowserRouter>
         <NavBar />
-        {/* <Routes><Route path="/login" element={<Login />} /></Routes> */}
+        <Routes>
+          <Route index element={<Sections />} />
+        </Routes>
       </BrowserRouter>
     </div>
     // </ChakraProvider>
