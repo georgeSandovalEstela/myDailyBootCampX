@@ -9,3 +9,7 @@ export function deleteUser() {
 export function setNewPost(newPost) {
   localStorage.setItem("post", newPost);
 }
+
+export function getUser() {
+  return JSON.parse(localStorage.getItem("user"));
+}
