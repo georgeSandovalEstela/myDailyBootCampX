@@ -30,8 +30,15 @@ function Login() {
           alignItems="center"
           flexDirection="column"
         >
-          <Heading color="white" marginTop="1rem">
-            Welvome Back!
+          <Heading
+            color="white"
+            marginTop="1rem"
+            fontFamily="'Ibarra Real Nova', serif"
+            fontSize="3rem"
+            width="100%"
+            textAlign="center"
+          >
+            Welcome Back!
           </Heading>
           <Image src="/src/assets/images/avatar.png" alt="avatar" width="65%" />
         </Box>
