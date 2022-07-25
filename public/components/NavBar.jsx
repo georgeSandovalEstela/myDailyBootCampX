@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { getUser } from "../Storage/Storage";
+import { getUserApp } from "../Storage/Storage";
 
 function NavBar() {
   return (
@@ -8,7 +8,7 @@ function NavBar() {
       <header className="header">
         <nav className="nav">
           <ul className="nav-list">
-            {getUser() ? (
+            {getUserApp() ? (
               ""
             ) : (
               <li className="nav-item">
@@ -17,9 +17,13 @@ function NavBar() {
                 </a>
               </li>
             )}
-            {getUser() ? (
+            {getUserApp() ? (
               <li className="nav-item">
-                <a href="#" className="nav-link active"></a>
+                <a
+                  href="#"
+                  className="nav-link active"
+                  style={{ visibility: "hidden" }}
+                ></a>
               </li>
             ) : (
               <li className="nav-item">
