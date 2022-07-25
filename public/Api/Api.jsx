@@ -9,7 +9,8 @@ export function getPosts(setPostState) {
     .then((data) => console.log(data));
 }
 
-export function addUser(user) {
+export function creatUser(user) {
+  var userLog = {};
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
   fetch(API_USERS, {
@@ -21,14 +22,16 @@ export function addUser(user) {
     .then((response) => {
       return response.json();
     })
-    .then((data) => console.log(data));
+    .then((data) => (userLog = data));
+  return userLog;
 }
+
 export function findUser(username) {
-  fetch(API_USERS)
+  return fetch(API_USERS)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
       return data.find((usr) => usr.full_name == username);
-    });
+    })
 }
