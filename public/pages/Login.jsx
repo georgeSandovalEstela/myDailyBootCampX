@@ -68,6 +68,9 @@ function Login() {
           flexDirection="column"
           borderTopLeftRadius="8px"
           borderBottomLeftRadius="8px"
+          borderTop="2px solid white"
+          borderLeft="2px solid white"
+          borderBottom="2px solid white"
         >
           <Heading
             color="white"
@@ -91,6 +94,9 @@ function Login() {
           bg="white"
           borderTopRightRadius="8px"
           borderBottomRightRadius="8px"
+          borderRight="2px solid #04c582"
+          borderBottom="2px solid #04c582"
+          borderTop="2px solid #04c582"
         >
           <Heading color="#4C72DA" marginTop="1rem">
             GsDevs
@@ -171,11 +177,17 @@ function Login() {
           <Box
             margin="1.5rem 0"
             width="100%"
+            height="20%"
             display="flex"
             justifyContent="center"
             alignItems="center"
           >
-            <Button bg="#5C98D5" _hover="" onClick={() => loginUser()}>
+            <Button
+              bg="#5C98D5"
+              _hover=""
+              onClick={() => loginUser()}
+              color="white"
+            >
               Login
             </Button>
           </Box>
