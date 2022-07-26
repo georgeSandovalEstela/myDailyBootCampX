@@ -1,4 +1,5 @@
 import React from "react";
+import ImagesContainer from "./ImagesContainer";
 
 function Post({ post }) {
   return (
@@ -70,6 +71,11 @@ function Post({ post }) {
       <div className="text">
         <p>{post.description}</p>
       </div>
+      {post.images.length > 0 ? (
+        <ImagesContainer key={post.id} images={post.images} />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
