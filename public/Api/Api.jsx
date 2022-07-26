@@ -1,12 +1,8 @@
 const API_POST = "https://my-daily-bootcamp.herokuapp.com/posts.json";
 const API_USERS = "https://my-daily-bootcamp.herokuapp.com/users.json";
 
-export function getPosts(setPostState) {
-  fetch(API_POST)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => console.log(data));
+export function getPosts() {
+  return fetch(API_POST).then((response) => response.json());
 }
 
 export function creatUser(user) {
@@ -33,5 +29,5 @@ export function findUser(username) {
     })
     .then((data) => {
       return data.find((usr) => usr.full_name == username);
-    })
+    });
 }

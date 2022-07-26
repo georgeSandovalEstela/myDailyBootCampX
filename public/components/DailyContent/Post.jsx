@@ -6,14 +6,12 @@ function Post({ post }) {
       <div className="public-header">
         <div className="public-date">
           <div className="date-conte">
-            <a
-              className="link-public"
-              href="https://twitter.com/yummta?lang=es"
-              target="_blank"
-            >
+            <a className="link-public" href="#" target="_blank">
               <img
                 className="date-img"
-                src="assets/profile.jpg"
+                src={post.author.profile_url}
+                width="50px"
+                height="50px"
                 alt="Foto de perfil del usuario"
               />
             </a>
@@ -23,9 +21,9 @@ function Post({ post }) {
                 href="https://twitter.com/yummta?lang=es"
                 target="_blank"
               >
-                <h3>Paul Portillo</h3>
+                <h3>{post.author.full_name}</h3>
               </a>
-              <p>04 de Julio, 2022</p>
+              <p>{new Date(post.created_at).toLocaleDateString()}</p>
             </div>
           </div>
         </div>
@@ -70,10 +68,7 @@ function Post({ post }) {
         </div>
       </div>
       <div className="text">
-        <p>
-          Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-          cambios, hacer pull request y mergearlo!
-        </p>
+        <p>{post.description}</p>
       </div>
     </div>
   );
