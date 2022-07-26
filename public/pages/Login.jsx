@@ -68,9 +68,9 @@ function Login() {
           flexDirection="column"
           borderTopLeftRadius="8px"
           borderBottomLeftRadius="8px"
-          borderTop="2px solid white"
-          borderLeft="2px solid white"
-          borderBottom="2px solid white"
+          borderTop="4px solid white"
+          borderLeft="4px solid white"
+          borderBottom="4px solid white"
         >
           <Heading
             color="white"
@@ -91,14 +91,15 @@ function Login() {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          bg="white"
           borderTopRightRadius="8px"
           borderBottomRightRadius="8px"
-          borderRight="2px solid #04c582"
-          borderBottom="2px solid #04c582"
-          borderTop="2px solid #04c582"
+          borderRight="4px solid #04c582"
+          borderBottom="4px solid #04c582"
+          borderTop="4px solid #04c582"
+          bg="url('/src/assets/images/bg_2.png')"
+          bgSize="cover"
         >
-          <Heading color="#4C72DA" marginTop="1rem">
+          <Heading color="white" textShadow="0 0 6px #000;" marginTop="1rem">
             GsDevs
           </Heading>
           <Text w="100%" marginLeft="1rem" marginBottom="0.5rem">

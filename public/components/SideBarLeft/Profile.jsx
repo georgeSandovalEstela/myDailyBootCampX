@@ -1,21 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getUserApp } from "../../Storage/Storage";
 
 function Profile() {
+  const [currentUser, setCurrentUser] = useState({});
+  useEffect(() => {
+    setCurrentUser(getUserApp());
+  }, []);
   return (
     <div className="Profile-card">
-      <img src="assets/me.jpg" alt="Perfil del usuario" />
-      <h3>Paul Portillo</h3>
-      <span>Software Enginner</span>
+      <img
+        src={currentUser.profile_url}
+        alt="Perfil del usuario"
+        width="60rem"
+        height="60rem"
+      />
+      <h3>{currentUser.full_name}</h3>
+      <span>{currentUser.title}</span>
       <div className="buttom">
-        <a
-          href="https://twitter.com/yummta?lang=es"
-          target="_blank"
-          className="profile-c"
-        >
-          <b>@yummta</b>
+        <a href={currentUser.twitter_url} target="_blank" className="profile-c">
+          <b>Twitter</b>
         </a>
         <a
-          href="https://www.linkedin.com/jobs/?originalSubdomain=pe"
+          href={currentUser.linkedin_url}
           target="_blank"
           className="profile-c"
         >
