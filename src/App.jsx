@@ -25,7 +25,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/posts" element={<Sections />} />
-          <Route path="/login" element={<Login />} />
+          <Route index path="/" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
