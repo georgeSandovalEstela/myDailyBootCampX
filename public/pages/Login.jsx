@@ -82,7 +82,11 @@ function Login() {
           >
             Welcome Back!
           </Heading>
-          <Image src="/src/assets/images/avatar.png" alt="avatar" width="65%" />
+          <Image
+            src="../../src/assets/images/avatar.png"
+            alt="avatar"
+            width="65%"
+          />
         </Box>
         <Box
           width="30%"
@@ -96,7 +100,7 @@ function Login() {
           borderRight="4px solid #04c582"
           borderBottom="4px solid #04c582"
           borderTop="4px solid #04c582"
-          bg="url('/src/assets/images/bg_2.png')"
+          bg="url('../../src/assets/images/bg_2.png')"
           bgSize="cover"
         >
           <Heading color="white" textShadow="0 0 6px #000;" marginTop="1rem">
